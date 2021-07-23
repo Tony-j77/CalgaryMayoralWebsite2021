@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  list-style: none;
+}
+
+body,html {
+    margin: 0;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    overflow-x: hidden;
+  }
+  ul { 
+    margin: 0px; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 800px;
+    text-align: center;
+    height: 100px;
+    align-items: center;
+    padding-left: 10vw;
+    position: absolute;
+    right: 240px;
+  }
+  li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+    height: 0px;
+    vertical-align:middle;
+  }
+  a {
+    color: #266BCC;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    min-width: 150px;
+    width: auto ;
+    top: 50%;
+    
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #266BCC;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.container {
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+
+.donate {
+  color: #F9E616;
+}
+
+.donate::after {
+  background-color: #F9E616;
+}
+
+.translate {
+  min-width: 50px;
+  max-width: 100px;
+}
+
+.translate {
+  max-width: 100px;
+}
+
+.section1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: burlywood;
+}
+
+.front-page {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+
+
+
+
