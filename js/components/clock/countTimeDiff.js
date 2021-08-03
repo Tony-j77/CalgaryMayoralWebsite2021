@@ -5,7 +5,7 @@ function countTimeDiff() {
 
     const newYear = currentYear;
 
-    const newYearDate = `2021/08/7 00:00:00`;
+    const newYearDate = `2021/08/3 00:00:00`;
     const newYearObject = new Date(newYearDate);
     const newYearMiliseconds = newYearObject.getTime();
 
