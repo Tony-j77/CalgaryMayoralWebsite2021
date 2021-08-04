@@ -5,7 +5,6 @@
         <title>Candidate Website</title>
         <link rel = "stylesheet" href = "styles.css">
         <link rel="stylesheet" href="donatestyles.css">
-        <link rel="stylesheet" href="contact-form.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="script.js"></script>
         <link href="//db.onlinewebfonts.com/c/10d0501adc787b5f33eec4eefdd9b5b1?family=Brother+1816" rel="stylesheet" type="text/css"/>
@@ -27,6 +26,8 @@
     <link rel="stylesheet" href="./css/toast.css">
     <!-- custom -->
     <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="contactstyles.css">
+    <script src="script1.js"></script>
 
     </head>
 
@@ -49,43 +50,10 @@
                 </ul>
             </div>
         </div>
-        <div class="support">Get In Touch With Ian</div>
-        <div class="fcf-body">
-
-            <div id="fcf-form">
-        
-            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-                
-                <div class="fcf-form-group">
-                    <label for="Name" class="fcf-label">Your name</label>
-                    <div class="fcf-input-group">
-                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                    </div>
-                </div>
-        
-                <div class="fcf-form-group">
-                    <label for="Email" class="fcf-label">Your email address</label>
-                    <div class="fcf-input-group">
-                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                    </div>
-                </div>
-        
-                <div class="fcf-form-group">
-                    <label for="Message" class="fcf-label">Your message</label>
-                    <div class="fcf-input-group">
-                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                    </div>
-                </div>
-        
-                <div class="fcf-form-group">
-                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-                </div>
-        
-            </form>
-            </div>
-        
+        <div class="flex-container" style="height: 100vh;">
+            <div class="flex-child"><div class="support">Get In Touch With Ian</div></div>
+            <div class="supportnonbold">Please direct your emails to: <span style="color:#DB504A;" id='john1' class="john" onclick="copy(this)" >khchiang@yahoo.ca </span></div>
         </div>
-        
         <footer class="container bg-main-color">
             <div class="row-short">
                 <img src="./img/logo.png" alt="mayor logo" style="padding-top: 40px; padding-bottom: 40px;">
