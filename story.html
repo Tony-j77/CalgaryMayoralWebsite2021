@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Candidate Website</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+         <!-- reset/init -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <!-- 3rd party css -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!-- component -->
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/mouse.css">
+    <link rel="stylesheet" href="./css/progress-bar.css">
+    <link rel="stylesheet" href="./css/toast.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="./css/custom.css">
+    </head>
+
+    <body>
+        <div id="navbar" style="z-index:3; position: fixed; float: right;
+        top: 0;
+        width: 100%; background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 16%, rgba(255,255,255,0.98) 52%, rgba(255,255,255,0.92) 73%, rgba(255,255,255,0.57) 90%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 16%,rgba(255,255,255,0.98) 52%,rgba(255,255,255,0.92) 73%,rgba(255,255,255,0.57) 90%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 16%,rgba(255,255,255,0.98) 52%,rgba(255,255,255,0.92) 73%,rgba(255,255,255,0.57) 90%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */" >
+             <div class='container1'>
+                 <b href="index.html" rel='home button'>
+                     <a href="index.html"><img src="img/logo.png" width='135' height='42' style="padding-top: 10px; padding-right: 2vw; padding-left: 2vw; max-height: 42px;"></a>
+                 </b>
+                 <ul id='ul'>
+                     <li><a href="story.html" class='btn'>IAN'S STORY</a></li>
+                     <li><a href="" class='btn'>IAN'S VISION</a></li>
+                     <li><a href="" class='btn'>ACTION CENTRE</a></li>
+                     <li><a href="" class='btn'>GET IN TOUCH</a></li>
+                     <li class="translate"><a href="" class='btn translate'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#266BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></a></li>
+                     <li class="donate"><a href="donate.html"  class='btn donate'>DONATE</a></li>
+                 </ul>
+             </div>
+         </div>
+         <div class='car' style="height:2000px;">
+             <img src="img/car.png" style="height: 50px; width:50px; margin-left: auto; margin-right: auto; display: block;">
+         </div>
+ 
+ 
+        
+     </body>
+     <script>
+         window.onload = function() { browserChecker()};
+         
+         var ua = navigator.userAgent.toLowerCase(); 
+ 
+         var ul = document.getElementById('ul');
+ 
+         function browserChecker() {
+             if (ua.indexOf('safari') != -1) { 
+                 if (ua.indexOf('chrome') > -1) {
+                     ul.classList.add('ulChrome');
+                 } else {
+                     ul.classList.add('ulSafari');
+                 }
+             }
+         }
+        
+         
+     
+         
+     </script>
+<html>

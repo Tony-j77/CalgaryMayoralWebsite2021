@@ -1,0 +1,73 @@
+
+.bigdonatewords {
+    width: 100vw;
+    height: 100vh;
+  background-color: white;
+}
+.support {
+  padding-top: 80px;
+  padding-left: 50px;
+  font-family: "Brother-1816-ExtraBold";
+  margin-right: auto;
+  width: 50vw;
+  text-align: left;
+  font-size: 100px;
+  color:#266BCC;
+  -webkit-font-smoothing: antialiased;
+}
+
+.supportnonbold {
+  padding-top: 20px;
+  padding-left: 50px;
+  font-family: "Brother-1816-ExtraBold";
+  margin-right: auto;
+  width: 60vw;
+  text-align: left;
+  font-size: 20px;
+  color:#266BCC;
+  -webkit-font-smoothing: antialiased;
+}
+
+.john {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  padding-bottom: 3px;
+  position: relative;
+  min-width: 150px;
+  width: auto;
+  height: auto;
+}
+
+.john:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background:#DB504A;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.john:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.conditions {
+  padding-top: 20px;
+  padding-left: 50px;
+  font-family: "Brother-1816-Light";
+  margin-right: auto;
+  width: 60vw;
+  text-align: left;
+  font-size: 10px;
+  color:#266BCC;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 30px;
+}
+
