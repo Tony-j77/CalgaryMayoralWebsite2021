@@ -71,12 +71,21 @@ body,html {
     -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
+    -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    -ms-transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
   .btn:hover:after { 
     width: 100%; 
     left: 0; 
   }
 
+  .platformbtn {
+    color: white;
+  }
+
+  .platformbtn::after {
+    background-color: white;
+  }
 .container1 {
 
   display: flex;
