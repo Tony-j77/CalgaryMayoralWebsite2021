@@ -16,7 +16,8 @@
     width: 100px;
     height: 150px;
     position: fixed;
-    right: 45vw;
+    right: 50%;
     top: 100px;
     z-index: 10;
+    margin-right: -55px;
 }
