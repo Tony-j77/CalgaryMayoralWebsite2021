@@ -4,7 +4,6 @@
     <head>
         <title>Candidate Website</title>
         <link rel = "stylesheet" href = "styles.css">
-        <link rel="stylesheet" href="donatestyles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="script.js"></script>
         <link href="//db.onlinewebfonts.com/c/10d0501adc787b5f33eec4eefdd9b5b1?family=Brother+1816" rel="stylesheet" type="text/css"/>
@@ -26,9 +25,7 @@
     <link rel="stylesheet" href="./css/toast.css">
     <!-- custom -->
     <link rel="stylesheet" href="./css/custom.css">
-    <link rel="stylesheet" href="contactstyles.css">
-    <script src="script1.js"></script>
-
+    <link rel="stylesheet" href="story.css">
     </head>
 
     <body>
@@ -44,20 +41,16 @@
                 </b>
                 <ul id='ul'>
                     <li><a href="story.html" class='btn'>IAN'S STORY</a></li>
-                    <li><a href="" class='btn'>IAN'S VISION</a></li>
+                    <li><a href="platform.html" class='btn'>IAN'S VISION</a></li>
                     <li><a href="contact.html" class='btn'>GET IN TOUCH</a></li>
                     <li class="donate"><a href="donate.html"  class='btn donate'>DONATE</a></li>
                 </ul>
             </div>
         </div>
-        <div class="flex-container" style="height: 100vh;">
-            <div style="float: left;">
-            <div class="flex-child"><div class="support">Get In Touch With Ian</div></div>
-            <div class="supportnonbold">Please direct your emails to: <span style="color:#DB504A;" id='john1' class="john" onclick="copy(this)" >khchiang@yahoo.ca </span></div>
-            </div>
-            <div style="float: left; margin-left: 50px; margin-top: 200px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="#266BCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </div>
+            <div class='front'>
+        </div>
+        <div class='cardiv'>
+            <img src="img/car.png" class='car'>
         </div>
         <footer class="container bg-main-color">
             <div class="row-short">
@@ -77,6 +70,7 @@
     </body>
     <script>
         window.onload = function() { browserChecker()};
+        
         var ua = navigator.userAgent.toLowerCase(); 
 
         var ul = document.getElementById('ul');

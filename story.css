@@ -1,0 +1,22 @@
+.front {
+    height: 600vh;
+    width: 100vw;
+    background-image: url("img/road.png");
+    background-position: center;
+}
+
+.car {
+    width: 109.2px;
+    height: 49.9px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.cardiv {
+    width: 100px;
+    height: 150px;
+    position: fixed;
+    right: 45vw;
+    top: 100px;
+    z-index: 10;
+}
