@@ -1,8 +1,11 @@
+@import url(//db.onlinewebfonts.com/c/bb766bf6ac06d377a2e9a1899864fffa?family=Brother-1816-ExtraBold);
+
 .front {
     height: 600vh;
     width: 100vw;
     background-image: url("img/road.png");
     background-position: center;
+    background-repeat: repeat-y;
 }
 
 .car {
@@ -20,4 +23,18 @@
     top: 100px;
     z-index: 10;
     margin-right: -55px;
+}
+
+.ianstory {
+    font-family: "Brother-1816-ExtraBold";
+  padding-top: 40px;
+  padding-bottom: 80px;
+  width: 50vw;
+  font-size: 60px;
+  color: #1b5ab3;
+  -webkit-font-smoothing: antialiased;
+  z-index: 3;
+    position: absolute;
+    top: 150px;
+    left: 5vw;
 }
