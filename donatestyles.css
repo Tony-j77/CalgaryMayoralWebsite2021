@@ -1,3 +1,17 @@
+@font-face {
+  font-family: Brother-1816;
+  src: url("/css/Brother1816-Regular.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: Brother-1816-ExtraBold;
+  src: url("/css/Brother1816-ExtraBold.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: Brother-1816-Light;
+  src: url("/css/Brother1816-Thin.woff2") format("woff2")
+}
 
 .bigdonatewords {
     width: 100vw;
