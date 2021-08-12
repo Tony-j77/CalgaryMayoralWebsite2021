@@ -1,0 +1,162 @@
+@import url(//db.onlinewebfonts.com/c/10d0501adc787b5f33eec4eefdd9b5b1?family=Brother+1816);
+@import url(//db.onlinewebfonts.com/c/bb766bf6ac06d377a2e9a1899864fffa?family=Brother-1816-ExtraBold);
+@import url(//db.onlinewebfonts.com/c/4c6d4bae00673663979f1879f856ec7e?family=Brother-1816-Light);
+
+:root
+{
+    --blue: #0d82f0;
+}
+
+.container
+{
+    margin-left: auto;
+    margin-right: auto;
+    perspective: 300px;
+}
+
+.styleOne
+{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.styleOneInner
+{
+    width: 75%;
+    border: 5px solid var(--blue);
+    height: 400px;
+    padding:40px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    margin-right: auto;
+    margin-left: auto;    
+    background-color: white;
+    
+}
+
+#nonBold
+{
+    text-align: left;
+    font-family: Brother-1816-Light;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: var(--blue);
+
+}
+
+.one
+{
+    font-family: Brother-1816-ExtraBold;
+    font-size:xx-large;
+    color: var(--blue);
+    
+
+}
+
+.one::before
+{
+    content: "1)";
+    font-family: Brother-1816-ExtraBold;
+    text-align: left;
+    margin-right: 10px;
+    
+}
+
+.two
+{
+    font-family: Brother-1816-ExtraBold;
+    font-size:xx-large;
+    color: var(--blue);
+    
+
+}
+
+.two::before
+{
+    content: "2)";
+    font-family: Brother-1816-ExtraBold;
+    text-align: left;
+    margin-right: 10px;
+    
+}
+
+.three
+{
+    font-family: Brother-1816-ExtraBold;
+    font-size:xx-large;
+    color: var(--blue);
+    
+
+}
+
+.three::before
+{
+    content: "3)";
+    font-family: Brother-1816-ExtraBold;
+    text-align: left;
+    margin-right: 10px;
+    
+}
+
+.four
+{
+    font-family: Brother-1816-ExtraBold;
+    font-size:xx-large;
+    color: var(--blue);
+    
+
+}
+
+.four::before
+{
+    content: "4)";
+    font-family: Brother-1816-ExtraBold;
+    text-align: left;
+    margin-right: 10px;
+    
+}
+
+#bold
+{
+    text-align: left;
+    font-family: Brother-1816-ExtraBold;
+    margin-top: 40px;
+    color: var(--blue);
+}
+
+
+
+.logo
+{
+    text-align:center;
+    font-family: Brother-1816-Light;
+    margin-right:auto;
+    margin-left:auto;
+    display: inline;
+
+}
+
+#top
+{
+    display: inline;
+    
+}
+
+.leftimg
+{
+    padding-right: 600px;
+    padding-left: 60px;
+}
+
+.rightimg
+{
+    padding-left: 600px;
+}
+
+#bottom
+{
+    padding-top: 3%;
+    padding-left: 50%;
+}

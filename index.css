@@ -1,0 +1,172 @@
+@import url(//db.onlinewebfonts.com/c/10d0501adc787b5f33eec4eefdd9b5b1?family=Brother+1816);
+@import url(//db.onlinewebfonts.com/c/bb766bf6ac06d377a2e9a1899864fffa?family=Brother-1816-ExtraBold);
+@import url(//db.onlinewebfonts.com/c/4c6d4bae00673663979f1879f856ec7e?family=Brother-1816-Light);
+
+:root
+{
+    --blue: #0d82f0;
+}
+
+
+.space
+{
+    height:400px;
+    width: 100%;
+}
+
+html
+{
+    background-image: url(../img/IanCloseUpEdited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    /* */
+    
+}
+
+.introQuote
+{
+    width: 1000px;
+    height: 100px;
+    margin-left:auto;
+    padding-top: 10px;
+    display:block;
+    
+}
+
+blockquote::before
+{
+    content: open-quote;
+    font-size: 1.75em;
+    color: #ddd;
+    font-family: sans-serif;
+}
+
+blockquote 
+{
+    color:cornsilk;
+    position: relative;
+    text-align: center;
+    padding-right: 100px;
+    
+    font-weight:bolder;
+    font-size:xx-large;
+    font-family:Brother-1816-ExtraBold;
+
+}
+
+blockquote::after 
+{ 
+    content: close-quote;
+    font-size: 1.75em;
+    color: #ddd;
+    font-family: sans-serif;
+}
+
+.introLogo
+{
+    content:url(../img/logoMayorals.png);
+    align-content: center;
+    margin-right: auto;
+    margin-left: 570px;
+    padding-top: 150px;
+    width:max-content;
+    height: max-content;
+    transform: translateZ(0px);
+
+}
+
+ul { 
+    margin: 0px; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 800px;
+    text-align: center;
+    height: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 10vw;
+    position: absolute;
+    /** here   **/
+  }
+
+  .ulChrome {
+    right: 0px;
+  }
+
+  .ulSafari {
+    right:20px;
+  }
+
+  li {
+    display: table-cell;
+    position: relative;
+    padding: 0px 0;
+    height: 0px;
+    vertical-align:middle;
+  }
+  .btn {
+    color: #266BCC;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    min-width: 150px;
+    width: auto;
+    right: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 790;
+  }
+  .btn:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #266BCC;
+    -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    -ms-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+  .btn:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  .platformbtn {
+    color: white;
+  }
+
+  .platformbtn::after {
+    background-color: white;
+  }
+.container1 {
+
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+  z-index: 100;
+  height: 100px;
+}
+
+
+.donate {
+  color: #DB504A;
+}
+
+.donate::after {
+  background-color: #DB504A;
+}
