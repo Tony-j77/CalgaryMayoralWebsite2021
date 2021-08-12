@@ -41,12 +41,10 @@ body,html {
             align-items: center;
     margin-left: 10vw;
     position: absolute;
+    right:0px;
     /** here   **/
   }
 
-  .ulChrome {
-    right: 0px;
-  }
 
   .ulSafari {
     right:20px;
