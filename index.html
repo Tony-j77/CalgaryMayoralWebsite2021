@@ -36,22 +36,29 @@
        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 16%,rgba(255,255,255,0.98) 52%,rgba(255,255,255,0.92) 73%,rgba(255,255,255,0.57) 90%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */" >
             <div class='container1'>
-                <b href="index.html" rel='home button'>
+                <b href="index.html" rel='home button' style="z-index: 5;">
                     <a href="index.html"><img src="img/logo.png" width='135' height='42' style="padding-top: 10px; padding-right: 2vw; padding-left: 2vw; max-height: 42px;"></a>
                 </b>
-                <ul id='ul'>
-                    <li><a href="story.html" class='btn'>IAN'S STORY</a></li>
-                    <li><a href="platform.html" class='btn'>IAN'S VISION</a></li>
-                    <li><a href="contact.html" class='btn'>GET IN TOUCH</a></li>
-                    <li class="donate"><a href="donate.html"  class='btn donate'>DONATE</a></li>
+                <ul id='ul' >
+                    <li id='hide'><a href="story.html" class='btn'>IAN'S STORY</a></li>
+                    <li id='hide'><a href="platform.html" class='btn'>IAN'S VISION</a></li>
+                    <li id='hide'><a href="contact.html" class='btn'>GET IN TOUCH</a></li>
+                    <li id='hide' class="donate"><a href="donate.html"  class='btn donate'>DONATE</a></li>
                 </ul>
+                <div class="menu" style="position: absolute; right: 20px; z-index: 5;" ><a  onclick="myFunction()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#266BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></a></svg></div>
+            </div>
+            <div id='content1' >
+                <div style="margin-left: auto; margin-right: auto; width: 200px; align-items: center;"><a style="text-align:center;"  href="story.html" class='btn menu'>IAN'S STORY</a></div>
+                <div style="margin-left: auto; margin-right: auto; width: 200px; align-items: center;"><a style="text-align:center;"  href="platform.html" class='btn menu'>IAN'S VISION</a></div>
+                <div style="margin-left: auto; margin-right: auto; width: 200px; align-items: center;"><a style="text-align:center;"  href="contact.html" class='btn menu'>GET IN TOUCH</a></div>
+                <div style="margin-left: auto; margin-right: auto; width: 200px; align-items: center;"><a style="text-align:center;" href="donate.html" class='btn menu'>DONATE</a></div>
             </div>
         </div>
 
     <div id='butter'>
         <div class='front-page' style="height: 750px;">
             <img src="img/better.png" loading='lazy' style="height: 750px;  width: 1500px; margin-left: auto; margin-right: auto; left: 50%;
-            margin-left: -700px;
+            margin-left: -800px;
             position:absolute;" >
         </div>
         <div class="vision" style="overflow: hidden;">
@@ -60,9 +67,9 @@
             <div class="link"><a href="platform.html" class="btn platformbtn">This is what Ian believes in.</a></div>
         </div>
         <div class='story' style="overflow: hidden;">
-            <div style="float: left;" style="overflow: hidden;"> 
+            <div class='bg' style="float: left;" style="overflow: hidden;"> 
                 <div class='rep' style="overflow: hidden;">A perfect representation of hard working Calgarians...</div>
-                <div class='intro' style="overflow: hidden;">Father of 3, Husband, Oil and gas engineer, Immigrant.</div>
+                <div class='intro' style="overflow: hidden;  ">Father of 3, Husband, Oil and gas engineer, Immigrant.</div>
                 <div class="link1"> <a href='story.html' class='btn storybtn'>Read Ian's story</a></div>
             </div>
             <div class='first'>
@@ -86,6 +93,22 @@
     </div>
     </body>
     <script>
+      function myFunction() {
+    var x = document.getElementById("content1");
+    if (x.style.display === "none") {
+    x.style.display = "block";
+    } else if (x.style.display ==="block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "none";
+    }
+    
+  
+  
+}
+    </script>
+    <script>
+
         window.onload = function() { browserChecker()};
         var ua = navigator.userAgent.toLowerCase();
         var ul = document.getElementById('ul');
@@ -100,11 +123,16 @@
             }
         }
 
-        var options = {
-    wrapperId: 'customDefaultId',
-    wrapperDamper: 0.10,
-    cancelOnTouch: true
-  };
-  butter.init();
+     
+
+       
     </script>
+   <script>
+    // set options when initializing butter.js
+    var options = {
+      wrapperDamper: 0.08,
+      cancelOnTouch: true
+    };
+    butter.init(options);
+  </script>
 <html>

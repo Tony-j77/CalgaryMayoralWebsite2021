@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="./css/toast.css">
     <!-- custom -->
     <link rel="stylesheet" href="./css/custom.css">
-    <link rel="stylesheet" href="contactstyles.css">
     <script src="script1.js"></script>
     <script src="butter.js"></script>
 
@@ -44,20 +43,27 @@
                     <a href="index.html"><img src="img/logo.png" width='135' height='42' style="padding-top: 10px; padding-right: 2vw; padding-left: 2vw; max-height: 42px;"></a>
                 </b>
                 <ul id='ul'>
-                    <li><a href="story.html" class='btn'>IAN'S STORY</a></li>
-                    <li><a href="platform.html" class='btn'>IAN'S VISION</a></li>
-                    <li><a href="contact.html" class='btn'>GET IN TOUCH</a></li>
-                    <li class="donate"><a href="donate.html"  class='btn donate'>DONATE</a></li>
+                    <li id='hide'><a href="story.html" class='btn'>IAN'S STORY</a></li>
+                    <li id='hide'><a href="platform.html" class='btn'>IAN'S VISION</a></li>
+                    <li id='hide'><a href="contact.html" class='btn'>GET IN TOUCH</a></li>
+                    <li id='hide' class="donate"><a href="donate.html"  class='btn donate'>DONATE</a></li>
                 </ul>
+                <div class='menu' style="position: absolute; right: 20px; z-index: 5;" ><a  onclick="myFunction()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#266BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></a></svg></div>
+            </div>
+            <div id='content1' >
+                <div style="margin-left: auto; margin-right: auto; width: 200px; align-items: center;"><a style="text-align:center;"  href="story.html" class='btn menu'>IAN'S STORY</a></div>
+                <div style="margin-left: auto; margin-right: auto; width: 200px; align-items: center;"><a style="text-align:center;"  href="platform.html" class='btn menu'>IAN'S VISION</a></div>
+                <div style="margin-left: auto; margin-right: auto; width: 200px; align-items: center;"><a style="text-align:center;"  href="contact.html" class='btn menu'>GET IN TOUCH</a></div>
+                <div style="margin-left: auto; margin-right: auto; width: 200px; align-items: center;"><a style="text-align:center;" href="donate.html" class='btn menu'>DONATE</a></div>
             </div>
         </div>
         <div id='butter'>
-        <div class="flex-container" style="height: 100vh;" style="overflow: hidden;">
-            <div style="float: left;" style="overflow: hidden;">
-            <div class="flex-child" style="overflow: hidden;"><div class="support" style="overflow: hidden;">Get In Touch With Ian</div></div>
-            <div class="supportnonbold" style="overflow: hidden;">Please direct your emails to: <span style="color:#DB504A;" id='john1' class="john" onclick="copy(this)" >khchiang@yahoo.ca </span></div>
+        <div class="flex-container" style="overflow: hidden; width:auto; height: auto; min-height: calc(100vh - 200px); width: 100vw;">
+            <div style="float: left;" style="overflow: hidden; width: auto;">
+            <div class="flex-child" style="overflow: hidden; width: auto;"><div class="support" style="overflow: hidden; font-size: 80px; width: auto; ">Get In Touch With Ian</div></div>
+            <div class="supportnonbold" style="overflow: hidden; width: auto; margin-bottom: 50px;">Please direct your emails to: <span style="color:#DB504A;" id='john1' class="john" onclick="copy(this)" >khchiang@yahoo.ca </span></div>
             </div>
-            <div style="float: left; margin-left: 50px; margin-top: 200px; overflow: hidden;">
+            <div class='fe' style="float: left; margin-left: 50px; margin-top: 200px; overflow: hidden;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="#266BCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </div>
         </div>
@@ -94,4 +100,19 @@
             }
         }
     </script>
+     <script>
+        function myFunction() {
+      var x = document.getElementById("content1");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else if (x.style.display ==="block") {
+          x.style.display = "none";
+      } else {
+          x.style.display = "none";
+      }
+      
+    
+    
+  }
+      </script>
 <html>

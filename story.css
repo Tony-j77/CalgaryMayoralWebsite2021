@@ -153,3 +153,29 @@
     top: 1850px;
     left: 20vw;
 }
+
+@media only screen and (max-width: 1150px) {
+  .fe {
+    display: none;
+  }
+
+  .first {
+    display:none;
+  }
+
+  .bold {
+    font-size: 40px;
+  }
+
+  #hide {
+    visibility: hidden;
+  }
+
+  #menu {
+    visibility: visible;
+  }
+  .menu {
+    display: block;
+  }
+
+}

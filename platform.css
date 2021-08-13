@@ -124,3 +124,34 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+
+  .menu {
+    display: none;
+  }
+  
+  
+  @media only screen and (max-width: 1150px) {
+    .fe {
+      display: none;
+    }
+  
+    .first {
+      display:none;
+    }
+  
+    .bold {
+      font-size: 40px;
+    }
+  
+    #hide {
+      visibility: hidden;
+    }
+  
+    #menu {
+      visibility: visible;
+    }
+    .menu {
+      display: block;
+    }
+  
+  }

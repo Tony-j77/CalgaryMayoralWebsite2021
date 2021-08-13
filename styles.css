@@ -43,6 +43,7 @@ body,html {
     position: absolute;
     right:0px;
     /** here   **/
+    z-index: 0;
   }
 
 
@@ -117,6 +118,9 @@ body,html {
   background-color: #DB504A;
 }
 
+.menu::after {
+  background-color:white;
+}
 .translate {
   min-width: 50px;
   max-width: 100px;
@@ -204,12 +208,6 @@ body,html {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
 }
-@media only screen and (max-width: 1150px) {
-  body {
-    background-color: lightblue;
-  }
- 
-}
 
 
 .story {
@@ -267,4 +265,74 @@ body,html {
   max-width: 445px;
   max-height: 578px;
  
+}
+
+
+#content1 {
+  height: 300px; 
+  width:100vw;
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 1150px) {
+  .fe {
+    display: none;
+  }
+
+  .first {
+    display:none;
+  }
+
+  .bold {
+    font-size: 40px;
+  }
+
+  #hide {
+    visibility: hidden;
+  }
+
+  #menu {
+    visibility: visible;
+  }
+  .menu {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .support {
+      margin-top:20px;
+      font-size: 40px;
+
+  }
+
+
+  .supportnonbold {
+      font-size:13px;
+  }
+
+  .rep {
+    font-size: 30px;
+    padding-right: 10px;
+  }
+
+  .intro {
+    width: 280px;
+  }
+  
+  .story {
+    width: 360px;
+    height: auto;
+  }
+
+  .nonbold {
+    font-size: 15px;
+  }
 }

@@ -1,5 +1,5 @@
 blue: #266BCC
-yellow: #F9E616
+yellow: #F4E10B
 red: #DB504A
 darkerblue: #1b5ab3
 

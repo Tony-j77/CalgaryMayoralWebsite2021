@@ -17,12 +17,12 @@
     width: 100vw;
     height: 100vh;
   background-color: white;
+  z-index: 4;
 }
 .support {
   padding-top: 80px;
   padding-left: 50px;
   font-family: "Brother-1816-ExtraBold";
-  margin-right: auto;
   width: 50vw;
   text-align: left;
   font-size: 100px;
@@ -34,7 +34,7 @@
   padding-top: 20px;
   padding-left: 50px;
   font-family: "Brother-1816-ExtraBold";
-  margin-right: auto;
+
   width: 60vw;
   text-align: left;
   font-size: 20px;
@@ -83,5 +83,36 @@
   color:#266BCC;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 30px;
+}
+
+.menu {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1150px) {
+  .fe {
+    display: none;
+  }
+
+  .first {
+    display:none;
+  }
+
+  .bold {
+    font-size: 40px;
+  }
+
+  #hide {
+    visibility: hidden;
+  }
+
+  #menu {
+    visibility: visible;
+  }
+  .menu {
+    display: block;
+  }
+
 }
 
