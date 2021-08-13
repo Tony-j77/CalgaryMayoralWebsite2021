@@ -1,0 +1,23 @@
+{
+  "name": "calgarymayoral2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "col.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calgarymayor/calgarymayoral2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calgarymayor/calgarymayoral2021/issues"
+  },
+  "homepage": "https://github.com/calgarymayor/calgarymayoral2021#readme",
+  "dependencies": {
+    "smooth-scrollbar": "^8.6.3"
+  }
+}
