@@ -26,6 +26,7 @@
     <!-- custom -->
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="story.css">
+    <script src="butter.js"></script>
     </head>
 
     <body>
@@ -47,6 +48,7 @@
                 </ul>
             </div>
         </div>
+        <div id='butter'>
         <div class='front'>
         </div>
         <div class='cardiv'>
@@ -101,8 +103,10 @@
                 </div>
             </div>
         </footer>
+    </div>
     </body>
     <script>
+        butter.init();
         window.onload = function() { browserChecker()};
         
         var ua = navigator.userAgent.toLowerCase(); 

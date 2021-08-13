@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./css/toast.css">
     <!-- custom -->
     <link rel="stylesheet" href="./css/custom.css">
+    <script src="butter.js"></script>
     </head>
 
     <body>
@@ -48,6 +49,7 @@
                 </ul>
             </div>
         </div>
+        <div id='butter'>
         <div class="bigdonatewords" style="overflow: hidden;">
             <div class="support" style="overflow: hidden;">Support Ian's Campaign</div>
             <div class="supportnonbold" style="overflow: hidden;">This grassroots movement with a focus on all Calgarians would not be possible without <span style="color:#DB504A;">your</span> support</div>
@@ -68,8 +70,10 @@
                 </div>
             </div>
         </footer>
+        </div>
     </body>
     <script>
+        butter.init();
         window.onload = function() { browserChecker()};
         
         var ua = navigator.userAgent.toLowerCase(); 
