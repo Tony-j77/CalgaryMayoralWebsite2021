@@ -97,7 +97,7 @@
     width: 92%;
     display: block;
     margin: 0 auto;
-    font-size: calc(30px + 20 * ((100vw - 375px) / 1065));
+    font-size: 40px;
     line-height: 120%;
     letter-spacing: -3px;
     margin: 50px;
@@ -110,20 +110,36 @@
       color: #113e88;
       text-align: center;
       margin: auto;
-      font-size: calc(20 * ((100vw - 375px) / 1065));
+      font-size: 30px;
       line-height: 120%;
       margin: 50px;
       font-weight: 300;
   }
 
+  .buildback1 {
+    font-weight: 400;
+    font-family: "Decimal", sans-serif;
+    color: #113e88;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    line-height: 120%;
+    margin: 50px;
+    font-weight: 300;
+  }
+
   .content {
     margin-left: 7vw;
-    background-color: red;
+    
     width: 85%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
+    -webkit-transition: max-height 0.2s ease-out;
+    -moz-transition: max-height 0.2s ease-out;
+    -ms-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
+}
 
   .menu {
     display: none;
@@ -154,4 +170,23 @@
       display: block;
     }
   
+  }
+
+  @media only screen and (max-width: 700px) {
+
+    .contactphoto {
+      display: none;
+    }
+
+    .feg {
+      margin-top: 100px;
+    }
+
+    .boldideas {
+      display: none;
+    }
+
+    .buildback {
+      display: none;
+    }
   }
